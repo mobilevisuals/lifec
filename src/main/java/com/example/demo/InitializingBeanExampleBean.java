@@ -7,6 +7,7 @@ package com.example.demo;
 
 import java.util.Arrays;
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,8 +30,18 @@ public class InitializingBeanExampleBean implements InitializingBean,DisposableB
 
     @Override
     public void destroy() throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       System.out.println("");
+    }
+    @PostConstruct
+    private void test1()
+    {
+    System.out.println("");
     }
     
+     @PreDestroy
+    private void test2()
+    {
+    System.out.println("");
+    }
     
 }

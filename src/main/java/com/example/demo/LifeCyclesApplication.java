@@ -13,7 +13,7 @@ public class LifeCyclesApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("");
     }
 
 }
