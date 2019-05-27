@@ -25,9 +25,5 @@ public class InvalidInitExampleBean {
         env.getActiveProfiles();
     }
   
-     @Bean(initMethod="init2")
-    void test2()
-    {
-    System.out.println("");
-    }
+    
 }

@@ -12,6 +12,7 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import static org.springframework.boot.Banner.Mode.LOG;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
@@ -40,6 +41,12 @@ public class InitializingBeanExampleBean implements InitializingBean,DisposableB
     
      @PreDestroy
     private void test2()
+    {
+    System.out.println("");
+    }
+    
+     @Bean(initMethod="init2")
+    void test3()
     {
     System.out.println("");
     }
